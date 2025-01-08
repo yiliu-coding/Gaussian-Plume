@@ -172,7 +172,7 @@ class gauss_model():
         self.C1=np.zeros((len(self.x),len(self.y),len(self.wind_dir)))
         PB.setProperty('value',0)
         for i in range(0,len(self.wind_dir)):
-            PB.setValue((i/len(self.wind_dir)*100)+1)
+            PB.setValue(int((i/len(self.wind_dir)*100)+1))
             self.C=np.ones((len(self.x),len(self.y)))
             self.C=gauss_func(self.Q,self.wind_speed[i],self.wind_dir[i],self.x,self.y,self.z,
                 self.stack_x,self.stack_y,self.H,self.Dy,self.Dz,self.stability[i],self.Rural) 
