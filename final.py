@@ -331,7 +331,7 @@ class Ui_MainWindow(object):
         self.label_3.setToolTip(_translate("MainWindow", "<html><head/><body><p>mass emmited per unit time</p></body></html>"))
         self.label_3.setText(_translate("MainWindow", "Q (g/s)"))
         self.qu.setToolTip(_translate("MainWindow", "<html><head/><body><p>mass emmited per unit time</p></body></html>"))
-        self.qu.setText(_translate("MainWindow", "40"))
+        self.qu.setText(_translate("MainWindow", "400"))
         self.label_4.setToolTip(_translate("MainWindow", "<html><head/><body><p>Height of stack in meter</p></body></html>"))
         self.label_4.setText(_translate("MainWindow", "Height of Stack"))
         self.hu.setToolTip(_translate("MainWindow", "<html><head/><body><p>Height of stack in meter</p></body></html>"))
@@ -339,7 +339,7 @@ class Ui_MainWindow(object):
         self.label_5.setToolTip(_translate("MainWindow", "<html><head/><body><p>run model for &lt;365&gt; days</p></body></html>"))
         self.label_5.setText(_translate("MainWindow", "days"))
         self.dayu.setToolTip(_translate("MainWindow", "<html><head/><body><p>run model for &lt;365&gt; days</p></body></html>"))
-        self.dayu.setText(_translate("MainWindow", "50"))
+        self.dayu.setText(_translate("MainWindow", "5"))
         self.label_11.setToolTip(_translate("MainWindow", "<html><head/><body><p>enter the cordinates you want to get the results at</p><p>x,y for PlanView</p><p>y,z for HeightSlice</p></body></html>"))
         self.label_11.setText(_translate("MainWindow", "Reciver Point X"))
         self.xu.setToolTip(_translate("MainWindow", "<html><head/><body><p>enter the cordinates you want to get the results at</p><p>x,y for PlanView</p><p>y,z for HeightView</p></body></html>"))
@@ -361,14 +361,14 @@ class Ui_MainWindow(object):
         self.label_10.setToolTip(_translate("MainWindow", "<html><head/><body><p>calculate out put for &lt;5&gt; km in &lt;5&gt;km domain</p></body></html>"))
         self.label_10.setText(_translate("MainWindow", "output domain (km)"))
         self.domainu.setToolTip(_translate("MainWindow", "<html><head/><body><p>solve for a &lt;?&gt; km domain, both x and y</p></body></html>"))
-        self.domainu.setText(_translate("MainWindow", "5"))
+        self.domainu.setText(_translate("MainWindow", "3"))
         self.label_2.setText(_translate("MainWindow", "dxy"))
         self.dxyu.setToolTip(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Ubuntu\'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Resolution of output in both x and y direction</p></body></html>"))
-        self.dxyu.setText(_translate("MainWindow", "100"))
+        self.dxyu.setText(_translate("MainWindow", "30"))
         self.label_9.setText(_translate("MainWindow", "dz"))
         self.dzu.setToolTip(_translate("MainWindow", "<html><head/><body><p>resolution of output in z direction</p></body></html>"))
         self.dzu.setText(_translate("MainWindow", "10"))

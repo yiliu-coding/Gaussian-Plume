@@ -59,9 +59,9 @@ class gauss_model():
         self.Mw=18e-3 
 
 
-        self.dxy=100           # resolution of the model in both x and y directions
+        self.dxy=30           # resolution of the model in both x and y directions
         self.dz=10
-        self.domain= 5
+        self.domain= 3  # in km
          ###########################################################################
         self.set_input()
 
@@ -85,9 +85,9 @@ class gauss_model():
         self.Rural = True
 
 
-        self.Q=40.  # mass emitted per unit time
+        self.Q=400.  # mass emitted per unit time
         self.H=50.  # stack height, m
-        self.days=50           # run the model for 365 days
+        self.days=5           # run the model for 365 days
         self.reciver_x = 10
         self.reciver_y = 500
         self.reciver_z = 10
@@ -234,7 +234,7 @@ class gauss_model():
             plt.ioff()
 
             self.ax = plt.pcolor(self.y,self.z,self.mean_C1, cmap='jet_r',shading='auto')      
-            plt.clim((0,1e2)) 
+            plt.clim((0,np.max(self.mean_C1)))
             plt.xlabel('y (metres)') 
             plt.ylabel('z (metres)') 
             plt.title(self.stability_str + '\n' + self.wind_dir_str) 
