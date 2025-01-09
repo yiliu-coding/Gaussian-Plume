@@ -213,7 +213,7 @@ class gauss_model():
             plt.ioff()
 
             self.ax = plt.pcolor(self.x,self.y,self.mean_C1, cmap='jet_r',shading='auto') 
-            plt.clim((0, 1e2)) 
+            plt.clim((0, np.max(self.mean_C1)))
             plt.title(self.stability_str + '\n' + self.wind_dir_str) 
             plt.xlabel('x (metres)') 
             plt.ylabel('y (metres)') 
